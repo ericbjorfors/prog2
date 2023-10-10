@@ -17,7 +17,7 @@ def fib_numba(n):
 	if n <= 1:
 		return n
 	else:
-		return(fib_py(n-1) + fib_py(n-2))
+		return(fib_numba(n-1) + fib_numba(n-2))
 	
 
 	
@@ -38,7 +38,7 @@ def main():
 	start = pc()
 	for i in [n for n in range(30,46)]:
 		start_split = pc()
-		fib_numba_list.append(fib_py(i))
+		fib_numba_list.append(fib_numba(i))
 		end_split = pc()
 		time_numba.append(end_split-start_split)
 	end = pc()
