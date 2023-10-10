@@ -108,7 +108,7 @@ def main():
 	plt.legend()
 
 	# Save the plot as an image file (e.g., PNG)
-	plt.savefig('fib30-46.png')
+	plt.savefig('fib20-30.png')
 
 	start = pc()
 	fib47n = fib_numba(47)
