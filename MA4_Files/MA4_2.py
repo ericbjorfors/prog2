@@ -121,6 +121,9 @@ def main():
 	# end = pc()
 	# print(f'Fibonacci number 47 generated with fib_c(n) {fib47c} in time {end-start} seconds')
 	print(fib_py(8))
+	print(fib_numba(8))
+	f = Person(8)
+	print(f.fib())
 
 
 	
