@@ -51,8 +51,9 @@ def appr_vol(n,d):
     end = pc()
     t = end-start
     return (V, V_exact,t)
-#print(appr_vol(100000,2)) #(3.14956, 3.141592653589793)
-#print(appr_vol(100000,11)) # (1.82272, 1.8841038793898994)
+#print(appr_vol(100000,2)) #(3.14992, 3.141592653589793, 0.5572315830000001)
+
+#print(appr_vol(100000,11)) #(1.80224, 1.8841038793898994, 2.0678888330000005)
 
 
 
@@ -85,11 +86,14 @@ def appr_vol_parallell(n,d,p):
 
 def main():
     # Your main code goes here
-    print(appr_vol(10000000,11))
-    print(appr_vol_parallell(1000000,11,10))
+    for i in [10**x for x in range(3, 6)]:
+        print(appr_pi(i))
+    print(appr_vol(1000000,11))
+    print(appr_vol_parallell(100000,11,10))
     #(1.8436096, 1.8841038793898994, 211.970472333)
     #(1.886208, 1.8841038793898994, 9.342677667000004)
-
+    pass
+   
 if __name__ == "__main__":
     main()
 
