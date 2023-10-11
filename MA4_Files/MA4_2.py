@@ -133,4 +133,4 @@ if __name__ == '__main__':
 # Generated fibonacci sequence with fib_py(n) [6765, 10946, 17711, 28657, 46368, 75025, 121393, 196418, 317811, 514229, 832040] in time 1.1701676190132275 seconds
 # Generated fibonacci sequence with fib_numba(n) [6765, 10946, 17711, 28657, 46368, 75025, 121393, 196418, 317811, 514229, 832040] in time 0.03440034098457545 seconds
 # Fibonacci number 47 generated with fib_numba(n) 2971215073 in time 47.6744947580155 seconds
-# Fibonacci number 47 generated with fib_c(n) -1323752223 in time 47.57791667606216 seconds
+# Fibonacci number 47 generated with fib_c(n) -1323752223 in time 47.57791667606216 seconds, integer overflow
