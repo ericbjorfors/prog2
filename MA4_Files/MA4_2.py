@@ -61,9 +61,9 @@ def main():
 	# Create a plot
 	x = [n for n in range(30,46)]
 	plt.figure(1)
-	# plt.plot(x, fib_py_list)
-	plt.plot(x,fib_numba_list)
-	plt.plot(x, fib_c_list)
+	# plt.plot(x, fib_py_list, label = 'fib_py(n)')
+	plt.plot(x,fib_numba_list, label = 'fib_numba(n)')
+	plt.plot(x, fib_c_list, label = 'fib_c(n)')
 
 	# Set labels and title
 	plt.xlabel('n')
@@ -98,8 +98,8 @@ def main():
 	# Create a plot
 	x = [n for n in range(20,31)]
 	plt.figure(2)
-	plt.plot(x, fib_py_list)
-	plt.plot(x,fib_numba_list)
+	plt.plot(x, fib_py_list, label = 'fib_py(n)')
+	plt.plot(x,fib_numba_list, label = 'fib_numba(n)')
 
 	# Set labels and title
 	plt.xlabel('n')
