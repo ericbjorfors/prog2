@@ -22,16 +22,16 @@ def fib_numba(n):
 
 	
 def main():
-	# fib_py_list = []
-	# time_py = []
-	# start = pc()
-	# for i in [n for n in range(30,46)]:
-	# 	start_split = pc()
-	# 	fib_py_list.append(fib_py(i))
-	# 	end_split = pc()
-	# 	time_py.append(end_split-start_split)
-	# end = pc()
-	# print(f'Generated fibonacci sequence with fib_py(n) {fib_py_list} in time {end-start} seconds')
+	fib_py_list = []
+	time_py = []
+	start = pc()
+	for i in [n for n in range(30,46)]:
+		start_split = pc()
+		fib_py_list.append(fib_py(i))
+		end_split = pc()
+		time_py.append(end_split-start_split)
+	end = pc()
+	print(f'Generated fibonacci sequence with fib_py(n) {fib_py_list} in time {end-start} seconds')
 
 	fib_numba_list = []
 	time_numba = []
@@ -61,7 +61,7 @@ def main():
 	# Create a plot
 	x = [n for n in range(30,46)]
 	plt.figure(1)
-	# plt.plot(x, time_py, label = 'fib_py(n)')
+	plt.plot(x, time_py, label = 'fib_py(n)')
 	plt.plot(x,time_numba, label = 'fib_numba(n)')
 	plt.plot(x, time_c, label = 'fib_c(n)')
 
@@ -72,7 +72,7 @@ def main():
 	plt.legend()
 
 	# Save the plot as an image file (e.g., PNG)
-	plt.savefig('fib30-46.png')
+	plt.savefig('fib30-45.png')
 
 	fib_py_list = []
 	time_py = []
