@@ -1,4 +1,5 @@
 #!/usr/bin/env python3.9
+# presenter Stephan Spengler
 
 from person import Person
 from time import perf_counter as pc
